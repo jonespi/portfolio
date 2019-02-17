@@ -19,16 +19,16 @@ header, .projects, .more, footer {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 44px;
   line-height: 50px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 h1, h2, h3 {
@@ -73,7 +73,7 @@ nav {
 
 .nav-links li :hover {
   font-weight: bold;
-  opacity: 0.5;
+  color: #046C46
 }
 
 header {
@@ -104,12 +104,12 @@ header {
 }
 
 body a {
-  padding-right: 15px;
   color: #DCB85A;
+  padding: 0 7.5px 0 7.5px;
 }
 
 body a :hover {
-  color: #043A33;
+  color: #046C46;
 }
 
 header .intro-paragraph {
@@ -118,8 +118,9 @@ header .intro-paragraph {
   max-width: 70%;
   width: 100%;
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 1.15px;
   line-height: 26px;
+  font-weight: 100;
 }
 
 /* div {
@@ -133,6 +134,7 @@ header .intro-paragraph {
 .project-1, .project-2, .project-3 {
   padding-top: 30px;
   line-height: 24px;
+  letter-spacing: 1.25px;
 }
 
 .project-1, .project-3 {
@@ -170,15 +172,35 @@ header .intro-paragraph {
 .project-icons li {
   display: inline;
 }
+.languages-used {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px; 
+  color: #043A33;
+}
+
+.languages-used li {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 40px;
+}
 
 .project-description {
   padding-top: 30px;
 }
 
-footer .contact-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.contact-links {
+  text-align: center;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width: 860px)  {
@@ -186,30 +208,88 @@ footer .contact-links {
     display: block;
   }
 
+  .projects {
+    padding-top: 10px;
+  }
+
   .project-1, .project-2, .project-3 {
     display: block;
+    padding-top: 40px;
   }
 
   .project-1 img, .project-2 img, .project-3 img {
+    display: flex;
+    justify-content: center;
     width: 90%;
   }
 
+  .project-1-text h3, .project-2-text h3, .project-3-text h3 {
+    padding-top: 25px;
+  }
+
+  header .name-header {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  header .intro-paragraph {
+    padding-left: 0;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .project-1-text, .project-3-text {
+    padding-left: 0;
+  }
+
+  .project-2-text {
+    padding-right: 0;
+  }
+
   @media only screen and (max-width: 425px)  {
-    nav h2 {
-      text-align: center;
+    body {
+      width: 100%;
+      max-width: 420px;
+      padding: 0;
     }
     
-    .nav-links {
-      width: 90%;
-      display: inline-block;
-      text-align: center;
+    nav {
+      display: none;
     }
 
     header {
-      padding-top: 200px;
+      padding-top: 0px;
+    }
+
+    header h3 {
+      line-height: 38px;
     }
 
     header .intro-paragraph {
+      padding-top: 25px;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .projects, .projects h3, .project-icons, footer {
+      text-align: center;
+    }
+
+    .project-1-text h3, .project-2-text h3, .project-3-text h3 {
+      padding-top: 25px;
+    }
+
+    .project-1-text, .project-3-text {
+      padding-left: 0;
+      text-align: left;
+    }
+
+    .project-2-text {
+      padding-right: 0;
+      text-align: left;
+    }
+
+    .languages-used li {
       padding-left: 0;
     }
 }
