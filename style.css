@@ -6,7 +6,6 @@
 body {
   display: block;
   font-family: 'Karla', sans-serif;
-  padding: 20px;
   color: #033649;
   background-color: #E8DDCB;
   font-size: 20px;
@@ -15,7 +14,7 @@ body {
 header, .projects, .more, footer {
   max-width: 1024px;
   width: 100%;
-  padding: 25px;
+  padding: 40px;
 }
 
 h1 {
@@ -35,7 +34,6 @@ h1, h2, h3 {
   font-family: 'Karla', sans-serif;
   padding-top: 10px;
   font-weight: strong;
-  padding-bottom: 10px;
 }
 
 nav {
@@ -45,12 +43,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .nav-links {
@@ -59,7 +52,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .nav-links li {
@@ -123,14 +117,10 @@ header .intro-paragraph {
   font-weight: 100;
 }
 
-/* div {
-  outline: dashed red;
-} */
-
 .anchor {
   display: block;
-  height: 50px; /*same height as header*/
-  margin-top: -50px; /*same height as header*/
+  height: 30px; /*same height as header*/
+  margin-top: -30px; /*same height as header*/
   visibility: hidden;
 }
 
@@ -277,8 +267,8 @@ footer p {
 
   .anchor {
     display: block;
-    height: 125px; /*same height as header*/
-    margin-top: -125px; /*same height as header*/
+    height: 55px; /*same height as header*/
+    margin-top: -55px; /*same height as header*/
     visibility: hidden;
   }
 
@@ -287,24 +277,20 @@ footer p {
 @media only screen and (max-width: 425px)  {
   body {
     width: 100%;
-    max-width: 420px;
+    max-width: 425px;
     padding: 0;
   }
-  
+
   .nav-links {
+    font-size: 18px;
     max-width: 400px;
     width: 90%;
-    display: inline-block;
     text-align: center;
     margin: 0;
   }
 
-  .name-header {
-    display: none;
-  }
-
   header {
-    padding-top: 0px;
+    padding-top: 80px;
   }
 
   header h3 {
@@ -312,7 +298,7 @@ footer p {
   }
 
   header .intro-paragraph {
-    padding-top: 250px;
+    padding-top: 50px;
     padding-left: 0;
     text-align: center;
     letter-spacing: 1px;
@@ -340,10 +326,16 @@ footer p {
     padding-left: 0;
   }
 
+  .podcasts-list {
+    display: block;
+    max-width: 320px;
+    width: 90%;
+  }
+
   .anchor {
     display: block;
-    height: 225px; /*same height as header*/
-    margin-top: -225px; /*same height as header*/
+    height: 50px; /*same height as header*/
+    margin-top: -50px; /*same height as header*/
     visibility: hidden;
   }
 
