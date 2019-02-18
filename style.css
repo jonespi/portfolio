@@ -282,10 +282,7 @@ footer p {
     visibility: hidden;
   }
 
-  .more {
-    display: none;
   }
-}
 
 @media only screen and (max-width: 425px)  {
   body {
@@ -294,7 +291,15 @@ footer p {
     padding: 0;
   }
   
-  nav {
+  .nav-links {
+    max-width: 400px;
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+  }
+
+  .name-header {
     display: none;
   }
 
@@ -307,7 +312,7 @@ footer p {
   }
 
   header .intro-paragraph {
-    padding-top: 25px;
+    padding-top: 250px;
     padding-left: 0;
     text-align: center;
     letter-spacing: 1px;
@@ -333,6 +338,10 @@ footer p {
 
   .languages-used li {
     padding-left: 0;
+  }
+
+  .more-podcasts {
+    display: block;
   }
 
 }
