@@ -216,7 +216,7 @@ header .intro-paragraph {
 }
 
 .podcasts-list li a :hover {
-  opacity: .8;
+  opacity: .7;
 }
 
 .podcast-list li {
@@ -340,8 +340,11 @@ footer p {
     padding-left: 0;
   }
 
-  .more-podcasts {
+  .anchor {
     display: block;
+    height: 225px; /*same height as header*/
+    margin-top: -225px; /*same height as header*/
+    visibility: hidden;
   }
 
 }
