@@ -4,9 +4,13 @@ function handleNavClicks() {
         console.log('nav link clicked')        
         let targetHref = $(this).attr('href');
         $('html, body').animate({
-        scrollTop: $(targetHref).offset().top
-        }, 1000);
+            scrollTop: $(targetHref).offset().top
+        }, 1500);
     });
 };
 
-$(handleNavClicks);
+function handleJQFunctions() {
+    handleNavClicks();
+}
+
+$(handleJQFunctions);

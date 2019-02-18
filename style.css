@@ -127,6 +127,13 @@ header .intro-paragraph {
   outline: dashed red;
 } */
 
+.anchor {
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  visibility: hidden;
+}
+
 .projects, .more, footer {
   padding-top: 40px;
 }
@@ -172,6 +179,7 @@ header .intro-paragraph {
 .project-icons li {
   display: inline;
 }
+
 .languages-used {
   display: flex;
   justify-content: space-between;
@@ -192,6 +200,27 @@ header .intro-paragraph {
 
 .contact-links {
   text-align: center;
+}
+
+.podcasts-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px; 
+}
+
+.podcasts-list li {
+  display: inline;
+  padding: 15px;
+  align-self: center;
+}
+
+.podcasts-list li a :hover {
+  opacity: .8;
+}
+
+.podcast-list li {
+  width: 45%;
 }
 
 footer h2 {
@@ -246,50 +275,64 @@ footer p {
     padding-right: 0;
   }
 
-  @media only screen and (max-width: 425px)  {
-    body {
-      width: 100%;
-      max-width: 420px;
-      padding: 0;
-    }
-    
-    nav {
-      display: none;
-    }
+  .anchor {
+    display: block;
+    height: 125px; /*same height as header*/
+    margin-top: -125px; /*same height as header*/
+    visibility: hidden;
+  }
 
-    header {
-      padding-top: 0px;
-    }
+  .more {
+    display: none;
+  }
+}
 
-    header h3 {
-      line-height: 38px;
-    }
+@media only screen and (max-width: 425px)  {
+  body {
+    width: 100%;
+    max-width: 420px;
+    padding: 0;
+  }
+  
+  nav {
+    display: none;
+  }
 
-    header .intro-paragraph {
-      padding-top: 25px;
-      padding-left: 0;
-      text-align: center;
-    }
+  header {
+    padding-top: 0px;
+  }
 
-    .projects, .projects h3, .project-icons, footer {
-      text-align: center;
-    }
+  header h3 {
+    line-height: 38px;
+  }
 
-    .project-1-text h3, .project-2-text h3, .project-3-text h3 {
-      padding-top: 25px;
-    }
+  header .intro-paragraph {
+    padding-top: 25px;
+    padding-left: 0;
+    text-align: center;
+    letter-spacing: 1px;
+  }
 
-    .project-1-text, .project-3-text {
-      padding-left: 0;
-      text-align: left;
-    }
+  .projects, .projects h3, .project-icons, footer {
+    text-align: center;
+  }
 
-    .project-2-text {
-      padding-right: 0;
-      text-align: left;
-    }
+  .project-1-text h3, .project-2-text h3, .project-3-text h3 {
+    padding-top: 25px;
+  }
 
-    .languages-used li {
-      padding-left: 0;
-    }
+  .project-1-text, .project-3-text {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .project-2-text {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .languages-used li {
+    padding-left: 0;
+  }
+
 }
