@@ -65,7 +65,7 @@ nav {
   text-decoration: none;
 }
 
-.nav-links li :hover {
+.nav-links li:hover {
   font-weight: bold;
   color: #046C46
 }
@@ -93,7 +93,7 @@ header {
   margin: 0;
 }
 
-.name-header .intro-icons li {
+.intro-icons li {
   list-style-type: none;
   display: inline-block;
 }
@@ -133,6 +133,14 @@ header .intro-paragraph {
   padding-top: 30px;
   line-height: 24px;
   letter-spacing: 1.25px;
+}
+
+.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .project-1, .project-3 {
@@ -206,7 +214,7 @@ header .intro-paragraph {
   align-self: center;
 }
 
-.podcasts-list li a :hover {
+.podcasts-list li a:hover {
   opacity: .7;
 }
 
@@ -273,6 +281,16 @@ footer p {
     visibility: hidden;
   }
 
+  .more {
+    padding-top: 5px;
+  }
+
+  .podcast {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-left: 0;
+  }
+
   }
 
 @media only screen and (max-width: 425px)  {
@@ -292,17 +310,22 @@ footer p {
 
   header {
     padding-top: 80px;
+    padding-bottom: 20px;
   }
 
   header h3 {
     line-height: 38px;
   }
 
-  header .intro-paragraph {
-    padding-top: 50px;
+  .intro-paragraph {
+    padding-top: 10px;
     padding-left: 0;
     text-align: center;
     letter-spacing: 1px;
+  }
+
+  .projects {
+    padding-top: 10px;
   }
 
   .projects, .projects h3, .project-icons, footer {
@@ -319,7 +342,7 @@ footer p {
   }
 
   .project-2-text {
-    padding-right: 0;
+    /* padding-right: 0; */
     text-align: left;
   }
 
